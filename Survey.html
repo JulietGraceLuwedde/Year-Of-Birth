@@ -2,12 +2,21 @@
 <html>
   <head>
       <style>
-        body{background-color:lightseagreen;}
+        body{background-color:white;}
           h2{color:black;
           text-align:center;
           }
           p{font-family: 'Courier New', Courier, monospace;
              font-size: 20px;}
+             .grace{ border: 1px solid black;
+            padding: 50px;
+            }
+            #container{width:50%;
+            margin:auto;
+            background-color: aqua;}
+            #header{text-align: center}
+            #question{text-align: center;
+            font-weight: bold}
       </style>
       <title>Survey Form</title>
       </head>
@@ -16,197 +25,205 @@
 </head>
 
 <body>
-  <div class="container"{
-    background-color:blue;
-     text-align: center;
-     font-family:'Courier';
-     min-width:320px;
-     margin: 0 auto;
-  }
-  <h1>Survey Form</h1>
-      <p> Help us know how to imporve out tourism services for you</p>
-      <h2>Clients Details</h2>
+    <div id="header">
+        <h1>Survey Form</h1>
+    </div>
 
-<form>
+  <div id="container">
+    <div id="form">
+        <form>
+          <div class="grace">
+            <h2>Clients Details</h2>
+            <table>
+                <tr>
+                    <td>
+               Names:
+                </td>
+                 <td>
+                  <input type="text" Names="first and second name">
+           </td>
+           </tr>
+             <br>
+              <tr>
+                  <td>
+             Email:
+             </td>
+           <td>
+             <input type="text" name="Email">
+           </td>
+           </tr>
+             <br>
+             <tr>
+                 <td>
+             Age:
+             </td>
+           <td>
+             <input type="figures" age="Age">
+             </td>
+             </tr>
+             </table>
+           
+           <h2>Gender</h2>
+           
+           <table>
+             <tr>
+               <td>
+             <input type="radio" name="gender" value="male"> Male<br>
+             <input type="radio" name="gender" value="female"> Female<br>
+             <input type="radio" name="gender" value="other"> Other
+             </td>
+                </tr>
+                </table>
+              </div>
+                          <br>
 
- <table>
-     <tr>
-         <td>
-    Names:
-     </td>
-      <td>
-       <input type="text" Names="first and second name">
-</td>
-</tr>
-  <br>
-   <tr>
-       <td>
-  Email:
-  </td>
-<td>
-  <input type="text" name="Email">
-</td>
-</tr>
-  <br>
-  <tr>
-      <td>
-  Age:
-  </td>
-<td>
-  <input type="figures" age="Age">
-  </td>
-  </tr>
-  </table>
+                 <div id="question">
+                    <p> Help us know how to imporve our tourism services for you:</p>
+                 </div>         
+                 <br>
 
-<h2>Gender</h2>
-
-<table>
-  <tr>
-    <td>
-  <input type="radio" name="gender" value="male"> Male<br>
-  <input type="radio" name="gender" value="female"> Female<br>
-  <input type="radio" name="gender" value="other"> Other
-  </td>
-     </tr>
-     </table>
-
-<p> On a scale of 1-10, how likely would you recomend Vijjana Safaris to your friends?</p>
-<table>
-  <tr>
-    <td>
-        <input type="radio" name="figures" value="0"> 0<br>
-        </td>
-         <td>
-        <input type="radio" name="figures" value="1"> 1<br>
-         </td>
-        <td>
-        <input type="radio" name="figures" value="2"> 2<br>  
-      </td>
-      <td>
-        <input type="radio" name="figures" value="3"> 3<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="4"> 4<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="5"> 5<br>  
-      </td>
-      <td>
-        <input type="radio" name="figures" value="6"> 6<br>
-      </td>
-      <td>
-      <input type="radio" name="figures" value="7"> 7<br>
-    </td>
-        <td>
-        <input type="radio" name="figures" value="8"> 8<br> 
-      </td>
-      <td>
-        <input type="radio" name="figures" value="9"> 9<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="10"> 10<br> 
-        </td>
-
-        </tr>
-      </table>
-      
-<p> How helpful was the guide during the trip?</p>
-<input type="radio" name="figures" value="Helpful"> Helpful<br>
-<input type="radio" name="figures" value="Very Helpful"> Very Helpful<br>
-<input type="radio" name="figures" value="Not Helpful"> Not Helpful<br>  
-
-<p> On a scale of 1-10, how was the knowledge of the guide of the animals you came across?</p>
-<table>
-  <tr>
-    <td>
-        <input type="radio" name="figures" value="0"> 0<br>
-        </td>
-         <td>
-        <input type="radio" name="figures" value="1"> 1<br>
-         </td>
-        <td>
-        <input type="radio" name="figures" value="2"> 2<br>  
-      </td>
-      <td>
-        <input type="radio" name="figures" value="3"> 3<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="4"> 4<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="5"> 5<br>  
-      </td>
-      <td>
-        <input type="radio" name="figures" value="6"> 6<br>
-      </td>
-      <td>
-      <input type="radio" name="figures" value="7"> 7<br>
-    </td>
-        <td>
-        <input type="radio" name="figures" value="8"> 8<br> 
-      </td>
-      <td>
-        <input type="radio" name="figures" value="9"> 9<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="10"> 10<br> 
-        </td>
-        
-        </tr>
-      </table>
-
-<p> On a scale of 1-10, rate the hotel where you were booked?</p>
-<table>
-  <tr>
-    <td>
-        <input type="radio" name="figures" value="0"> 0<br>
-        </td>
-         <td>
-        <input type="radio" name="figures" value="1"> 1<br>
-         </td>
-        <td>
-        <input type="radio" name="figures" value="2"> 2<br>  
-      </td>
-      <td>
-        <input type="radio" name="figures" value="3"> 3<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="4"> 4<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="5"> 5<br>  
-      </td>
-      <td>
-        <input type="radio" name="figures" value="6"> 6<br>
-      </td>
-      <td>
-      <input type="radio" name="figures" value="7"> 7<br>
-    </td>
-        <td>
-        <input type="radio" name="figures" value="8"> 8<br> 
-      </td>
-      <td>
-        <input type="radio" name="figures" value="9"> 9<br>
-      </td>
-      <td>
-        <input type="radio" name="figures" value="10"> 10<br> 
-        </td>
-        
-        </tr>
-      </table>
- 
-<p> Kindly comment on the food services that were offered by the hotel.</p>
-    <br>
-        <input type="text" Response="300words">
-        <br>
-
-<p> How best can we improve our services to serve you better?</p>
-        <br>
-            <input type="text" Response="300words">
-            <br>
-        <br>
-        <input type="submit" value="Submit">
-          <br>
-</form>
+              <div class="grace">
+               
+           <p> On a scale of 1-10, how likely would you recomend Vijjana Safaris to your friends?</p>
+           <table>
+             <tr>
+               <td>
+                   <input type="radio" name="figures" value="0"> 0<br>
+                   </td>
+                    <td>
+                   <input type="radio" name="figures" value="1"> 1<br>
+                    </td>
+                   <td>
+                   <input type="radio" name="figures" value="2"> 2<br>  
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="3"> 3<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="4"> 4<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="5"> 5<br>  
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="6"> 6<br>
+                 </td>
+                 <td>
+                 <input type="radio" name="figures" value="7"> 7<br>
+               </td>
+                   <td>
+                   <input type="radio" name="figures" value="8"> 8<br> 
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="9"> 9<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="10"> 10<br> 
+                   </td>
+           
+                   </tr>
+                 </table>
+                 
+           <p> How helpful was the guide during the trip?</p>
+           <input type="radio" name="figures" value="Helpful"> Helpful<br>
+           <input type="radio" name="figures" value="Very Helpful"> Very Helpful<br>
+           <input type="radio" name="figures" value="Not Helpful"> Not Helpful<br>  
+           
+           <p> On a scale of 1-10, how was the knowledge of the guide of the animals you came across?</p>
+           <table>
+             <tr>
+               <td>
+                   <input type="radio" name="figures" value="0"> 0<br>
+                   </td>
+                    <td>
+                   <input type="radio" name="figures" value="1"> 1<br>
+                    </td>
+                   <td>
+                   <input type="radio" name="figures" value="2"> 2<br>  
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="3"> 3<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="4"> 4<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="5"> 5<br>  
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="6"> 6<br>
+                 </td>
+                 <td>
+                 <input type="radio" name="figures" value="7"> 7<br>
+               </td>
+                   <td>
+                   <input type="radio" name="figures" value="8"> 8<br> 
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="9"> 9<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="10"> 10<br> 
+                   </td>
+                   
+                   </tr>
+                 </table>
+           
+           <p> On a scale of 1-10, rate the hotel where you were booked?</p>
+           <table>
+             <tr>
+               <td>
+                   <input type="radio" name="figures" value="0"> 0<br>
+                   </td>
+                    <td>
+                   <input type="radio" name="figures" value="1"> 1<br>
+                    </td>
+                   <td>
+                   <input type="radio" name="figures" value="2"> 2<br>  
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="3"> 3<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="4"> 4<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="5"> 5<br>  
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="6"> 6<br>
+                 </td>
+                 <td>
+                 <input type="radio" name="figures" value="7"> 7<br>
+               </td>
+                   <td>
+                   <input type="radio" name="figures" value="8"> 8<br> 
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="9"> 9<br>
+                 </td>
+                 <td>
+                   <input type="radio" name="figures" value="10"> 10<br> 
+                   </td>
+                   
+                   </tr>
+                 </table>
+            
+           <p> Kindly comment on the food services that were offered by the hotel.</p>
+               <br>
+                   <input type="text" Response="300words">
+                   <br>
+           
+           <p> How best can we improve our services to serve you better?</p>
+                   <br>
+                       <input type="text" Response="300words">
+                       <br>
+                   <br>
+                   <input type="submit" value="Submit">
+                     <br>
+                    </div>
+           </form>
+    </div>
+  </div>
   </body>
 </html>
